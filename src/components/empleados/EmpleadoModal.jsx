@@ -15,19 +15,24 @@ export default function EmpleadoModal({ onClose, onSave }) {
   const handleSubmit = (e) => {
     e.preventDefault();
 
+    const salarioNumber = Number(form.salario);
+
+    // Validación: salario no negativo
+    if (salarioNumber < 0) {
+      alert("El salario no puede ser negativo.");
+      return;
+    }
+
     const nuevoEmpleado = {
       ...form,
-      salario: Number(form.salario),
+      salario: salarioNumber,
     };
 
-    // Pasar el estado
+    // Pasar al estado en frontend
     onSave(nuevoEmpleado);
 
     // Reset form
     setForm({ nombre: "", rol: "analista", salario: "" });
-
-    // Cerrar modal después de guardar
-    onClose();
   };
 
   return (
@@ -52,8 +57,8 @@ export default function EmpleadoModal({ onClose, onSave }) {
             onChange={handleChange}
             className="w-full border border-gray-700 bg-gray-800 text-gray-100 px-3 py-2 rounded-lg focus:outline-none focus:ring-2 focus:ring-red-500"
           >
-            <option value="Analista">Analista</option>
-            <option value="Ejecutivo">Ejecutivo</option>
+            <option value="analista">Analista</option>
+            <option value="ejecutivo">Ejecutivo</option>
           </select>
           <input
             type="number"
