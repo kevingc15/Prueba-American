@@ -101,7 +101,7 @@ index.jsx
 ## 🚀 Cómo ejecutar el proyecto
 
 1. Clonar el repositorio:
-git clone <tu-repositorio>
+git clone <Prueba-American>
 cd <Frontend>
 2. Instalar dependencias:
 npm install
