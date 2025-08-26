@@ -1,0 +1,4 @@
+[
+  { "id": 1, "nombre": "Carlos Pérez", "rol": "Ejecutivo", "salario": 5000000 },
+  { "id": 2, "nombre": "Ana Gómez", "rol": "Analista", "salario": 3000000 }
+]

@@ -1,0 +1,23 @@
+[
+  {
+    "id": 1,
+    "empleado": "Carlos Pérez",
+    "monto": 5000000,
+    "plazo": 24,
+    "tasa": 0.15
+  },
+  {
+    "id": 2,
+    "empleado": "Ana Gómez",
+    "monto": 8000000,
+    "plazo": 36,
+    "tasa": 0.18
+  },
+  {
+    "id": 3,
+    "empleado": "Carlos Pérez",
+    "monto": 3000000,
+    "plazo": 12,
+    "tasa": 0.12
+  }
+]
