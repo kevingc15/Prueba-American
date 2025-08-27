@@ -1,5 +1,5 @@
 [
-  { "id": 1, "monto": 5000000, "tasa": 0.12, "años": 5 },
-  { "id": 2, "monto": 8000000, "tasa": 0.15, "años": 3 },
-  { "id": 3, "monto": 3000000, "tasa": 0.1, "años": 7 }
+  { "id": 1, "monto": 5000000, "tasa": 0.12, "years": 5 },
+  { "id": 2, "monto": 8000000, "tasa": 0.15, "years": 3 },
+  { "id": 3, "monto": 3000000, "tasa": 0.1, "years": 7 }
 ]

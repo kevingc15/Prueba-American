@@ -4,8 +4,8 @@ import { valorFuturo, formatearMoneda } from "../../utils/inversiones";
 export default function InversionCard({ inversion }) {
   // Prepara datos para el gráfico: cada punto es un año y el valor acumulado
   const graficoData = [];
-  for (let i = 0; i <= inversion.años; i++) {
-    graficoData.push({ año: i, valor: valorFuturo(inversion.monto, inversion.tasa, i) });
+  for (let i = 0; i <= inversion.years; i++) {
+    graficoData.push({ year: i, valor: valorFuturo(inversion.monto, inversion.tasa, i) });
   }
 
   return (
@@ -15,7 +15,7 @@ export default function InversionCard({ inversion }) {
         <ResponsiveContainer width="100%" height="100%">
           <LineChart data={graficoData} margin={{ top: 20, right: 40, left: 20, bottom: 20 }}>
             <CartesianGrid stroke="#555" />
-            <XAxis dataKey="año" stroke="#ccc" />
+            <XAxis dataKey="year" stroke="#ccc" />
             <YAxis stroke="#ccc" />
             <Tooltip formatter={(value) => formatearMoneda(value)} />
             <Line type="monotone" dataKey="valor" stroke="#f87171" strokeWidth={2} />

@@ -1,4 +1,4 @@
-import { calcularBono } from "../../utils/bono";
+import { calcularBono, formatearMoneda } from "../../utils/bono";
 
 export default function EmpleadoRow({ empleado }) {
   let porcentaje = "0%";

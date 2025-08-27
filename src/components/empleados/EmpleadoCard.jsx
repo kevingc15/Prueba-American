@@ -1,3 +1,5 @@
+import { formatearMoneda } from "../../utils/bono";
+
 export default function EmpleadoCard({ empleado }) {
   let porcentaje = "0%";
   if (empleado.rol.toLowerCase() === "ejecutivo") porcentaje = "10%";

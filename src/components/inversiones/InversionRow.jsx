@@ -6,7 +6,7 @@ export default function InversionRow({ inversion }) {
       <td className="px-6 py-3">{inversion.id}</td>
       <td className="px-6 py-3">{formatearMoneda(inversion.monto)}</td>
       <td className="px-6 py-3">{(inversion.tasa * 100).toFixed(2)}%</td>
-      <td className="px-6 py-3">{formatearMoneda(valorFuturo(inversion.monto, inversion.tasa, inversion.años))}</td>
+      <td className="px-6 py-3">{formatearMoneda(valorFuturo(inversion.monto, inversion.tasa, inversion.years))}</td>
     </tr>
   );
 }
